@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax1 {
+    background-image: url(Rui.jpg);
+}
+
+.parallax2 {
+    background-image: url(Nene.png);
+}
+
+.black {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message1 {
+    font-size: 50px;
+    color: darkorchid;
+    text-align: center;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+    text-decoration: underline darkorchid;
+}
+
+.message2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.message3 {
+    font-size: 50px;
+    color: darkseagreen;
+    text-align: center;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+    text-decoration: underline darkseagreen;
+}
