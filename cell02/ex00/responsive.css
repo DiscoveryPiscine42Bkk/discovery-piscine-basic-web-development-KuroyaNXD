@@ -1,0 +1,16 @@
+   
+html, body {
+    margin: 0;
+    padding: 0;
+}
+table {
+    width: 100vw;
+    height: 100vh;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    word-wrap: break-word;
+    text-align: center;
+}

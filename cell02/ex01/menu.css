@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+}
+
+
+.drop {
+    background-color: #002fffa1;
+    color: white;
+    padding: 16x 24px;
+    font-size: 18px;
+    width: 170px;
+    height: 80px;
+    border: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+     transition: background 0.3s;
+}
+
+.drop:hover {
+    background-color: #002fffa6;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+
+}
+
+.content a:hover {
+    background-color: #f1f1f1;
+}
+
+.drop:hover .content {
+    display: block;
+}
