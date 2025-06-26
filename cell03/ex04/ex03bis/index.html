@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      text-align: center;
+      height: 100vh;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    #ft_list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .todo_item {
+      background-color: #f0f0f0;
+      margin: 5px;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="newTodo">New</button>
+  <div id="ft_list"></div>
+
+  <script src="todo.js"></script>
+
+</body>
+</html>

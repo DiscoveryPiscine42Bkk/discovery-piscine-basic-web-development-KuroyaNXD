@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      text-align: center;
+      height: 100vh;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    input, select {
+      margin: 5px;
+      padding: 5px;
+      font-size: 16px;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Basic Calculator</h1>
+
+  <input type="text" id="left" placeholder="Insert Number">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input type="text" id="right" placeholder="Insert Number">
+  <input type="submit" id="calculate" value="Try Me!">
+
+  <script>
+    $(function () {
+      const isInt = n => Number.isInteger(n) && n >= 0;
+
+      $('#calculate').click(() => {
+        const l = Number($('#left').val());
+        const r = Number($('#right').val());
+        const op = $('#operator').val();
+
+        if (!isInt(l) || !isInt(r)) return alert('Error :(');
+        if ((op === '/' || op === '%') && r === 0)
+          return alert("It's over 9000!") & console.log("It's over 9000!");
+
+        let result = eval(`${l} ${op} ${r}`);
+        alert(result);
+        console.log(result);
+      });
+
+      setInterval(() => alert('Please, use me...'), 30000);
+    });
+  </script>
+
+</body>
+</html>
