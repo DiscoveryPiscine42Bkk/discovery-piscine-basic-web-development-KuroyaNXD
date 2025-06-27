@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Portfolio Page</title>
+    <style>
+
+    @font-face {
+      font-family: 'HYWenHei';
+      src: url('fonts/zhcn.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      font-family: 'HYWenHei', sans-serif;
+      background-image: url('media/3.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+
+    }
+
+    h1 {
+      font-size: 2.8em;
+      text-shadow: 0 0 15px #fff;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      text-shadow: 0 0 10px #ccc;
+      margin-bottom: 40px;
+    }
+
+    .port button {
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'HYWenHei', sans-serif;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 12px #fff;
+      transition: all 0.3s ease;
+    }
+
+    .port button:hover {
+      background: rgba(255, 255, 255, 0.25);
+      color: #e0e0e0;
+      box-shadow: 0 0 18px #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>WELCOME TO OUR RUSH PROJECT</h1>
+    <h3>Our Portfolio Page</h3>
+
+    <div class="port">
+        <a href="Port.html"><button>Click Here!</button></a>
+    </div>
+</body>
+</html>
